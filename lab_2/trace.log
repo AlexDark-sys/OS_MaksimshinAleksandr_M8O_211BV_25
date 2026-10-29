@@ -1,0 +1,1089 @@
+9682  execve("./main", ["./main", "1000", "1000", "5", "4"], 0x7ffd1c4ef2a8 /* 60 vars */) = 0
+9682  brk(NULL)                         = 0x5c71326a5000
+9682  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x750dc51dc000
+9682  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+9682  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+9682  fstat(3, {st_mode=S_IFREG|0644, st_size=25575, ...}) = 0
+9682  mmap(NULL, 25575, PROT_READ, MAP_PRIVATE, 3, 0) = 0x750dc51d5000
+9682  close(3)                          = 0
+9682  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+9682  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+9682  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+9682  fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+9682  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+9682  mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x750dc4e00000
+9682  mmap(0x750dc4e28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x750dc4e28000
+9682  mmap(0x750dc4fb0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x750dc4fb0000
+9682  mmap(0x750dc4fff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x750dc4fff000
+9682  mmap(0x750dc5005000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x750dc5005000
+9682  close(3)                          = 0
+9682  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x750dc51d2000
+9682  arch_prctl(ARCH_SET_FS, 0x750dc51d2740) = 0
+9682  set_tid_address(0x750dc51d2a10)   = 9682
+9682  set_robust_list(0x750dc51d2a20, 24) = 0
+9682  rseq(0x750dc51d3060, 0x20, 0, 0x53053053) = 0
+9682  mprotect(0x750dc4fff000, 16384, PROT_READ) = 0
+9682  mprotect(0x5c70f65ff000, 4096, PROT_READ) = 0
+9682  mprotect(0x750dc5214000, 8192, PROT_READ) = 0
+9682  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+9682  munmap(0x750dc51d5000, 25575)     = 0
+9682  getrandom("\x56\x2a\x82\x5f\xaf\x03\x01\x13", 8, GRND_NONBLOCK) = 8
+9682  brk(NULL)                         = 0x5c71326a5000
+9682  brk(0x5c71326c6000)               = 0x5c71326c6000
+9682  mmap(NULL, 8003584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x750dc465e000
+9682  mmap(NULL, 8003584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x750dc3ebc000
+9682  mmap(NULL, 8003584, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x750dc371a000
+9682  openat(AT_FDCWD, "/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+9682  read(3, "0-15\n", 1024)           = 5
+9682  close(3)                          = 0
+9682  fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x3), ...}) = 0
+9682  write(1, "\320\234\320\260\321\202\321\200\320\270\321\206\320\260: 1000 x 1000, K ="..., 70) = 70
+9682  write(1, "\320\255\321\200\320\276\320\267\320\270\321\217, \320\277\320\276\321\201\320\273\320\265\320\264\320\276\320\262\320\260"..., 59) = 59
+9682  write(1, "  \320\277\320\276\321\202\320\276\320\272\320\276\320\262: 1, \320\262\321\200\320\265\320\274\321\217:"..., 107) = 107
+9682  rt_sigaction(SIGRT_1, {sa_handler=0x750dc4e99530, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x750dc4e45330}, NULL, 8) = 0
+9682  rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+9682  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x750dc2f19000
+9682  mprotect(0x750dc2f1a000, 8388608, PROT_READ|PROT_WRITE) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} => {parent_tid=[9683]}, 88) = 9683
+9683  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9683  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9683  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+9683  <... set_robust_list resumed>)    = 0
+9682  <... mmap resumed>)               = 0x750dc2718000
+9683  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  mprotect(0x750dc2719000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+9683  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... mprotect resumed>)           = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9684]}, 88) = 9684
+9684  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9684  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9684  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9683, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9684  <... set_robust_list resumed>)    = 0
+9684  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9683  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9683  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9683  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9683  +++ exited with 0 +++
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9684, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9684  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9684  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9684  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9684  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9685]}, 88) = 9685
+9685  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9685  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9685  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9685  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9685  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9685  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9686]}, 88) = 9686
+9686  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9686  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9686  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9685, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9686  <... set_robust_list resumed>)    = 0
+9686  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9685  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9685  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9685  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9686  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9685  +++ exited with 0 +++
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9686, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9686  <... rt_sigprocmask resumed>NULL, 8) = 0
+9686  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9686  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9686  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} => {parent_tid=[9687]}, 88) = 9687
+9687  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9687  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9687  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9687  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9687  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} <unfinished ...>
+9687  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9688]}, 88) = 9688
+9688  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9688  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9688  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9687, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9688  <... set_robust_list resumed>)    = 0
+9688  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9688  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9688  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9688  exit(0)                           = ?
+9688  +++ exited with 0 +++
+9687  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9687  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9687  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9687  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9689]}, 88) = 9689
+9689  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9689  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9689  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9689  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9689  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9690]}, 88) = 9690
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9690  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9690  <... rseq resumed>)               = 0
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9689, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9690  set_robust_list(0x750dc37199a0, 24) = 0
+9690  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9689  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9689  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9689  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9689  +++ exited with 0 +++
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9690, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9690  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9690  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9690  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9690  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} => {parent_tid=[9691]}, 88) = 9691
+9691  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9691  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9691  set_robust_list(0x750dc37199a0, 24) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9691  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9691  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9692]}, 88) = 9692
+9692  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9692  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9692  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9691, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9692  <... set_robust_list resumed>)    = 0
+9692  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9691  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9692  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9691  <... rt_sigprocmask resumed>NULL, 8) = 0
+9692  <... rt_sigprocmask resumed>NULL, 8) = 0
+9692  madvise(0x750dc2718000, 8368128, MADV_DONTNEED <unfinished ...>
+9691  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED <unfinished ...>
+9692  <... madvise resumed>)            = 0
+9691  <... madvise resumed>)            = 0
+9692  exit(0 <unfinished ...>
+9691  exit(0 <unfinished ...>
+9692  <... exit resumed>)               = ?
+9691  <... exit resumed>)               = ?
+9692  +++ exited with 0 +++
+9691  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9682  write(1, "  \320\277\320\276\321\202\320\276\320\272\320\276\320\262: 2, \320\262\321\200\320\265\320\274\321\217:"..., 107) = 107
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9693]}, 88) = 9693
+9693  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9693  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9693  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9693  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9693  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9694]}, 88) = 9694
+9694  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9694  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9694  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+9694  <... set_robust_list resumed>)    = 0
+9682  <... mmap resumed>)               = 0x750dc1f17000
+9694  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  mprotect(0x750dc1f18000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+9694  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... mprotect resumed>)           = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} => {parent_tid=[9695]}, 88) = 9695
+9695  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9695  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9695  set_robust_list(0x750dc27179a0, 24) = 0
+9682  mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+9695  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  <... mmap resumed>)               = 0x750dc1716000
+9695  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  mprotect(0x750dc1717000, 8388608, PROT_READ|PROT_WRITE) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} => {parent_tid=[9696]}, 88) = 9696
+9696  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9696  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9696  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9693, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9696  <... set_robust_list resumed>)    = 0
+9696  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9694  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9695  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9694  <... rt_sigprocmask resumed>NULL, 8) = 0
+9695  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9694  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED <unfinished ...>
+9695  <... madvise resumed>)            = 0
+9694  <... madvise resumed>)            = 0
+9695  exit(0 <unfinished ...>
+9694  exit(0 <unfinished ...>
+9695  <... exit resumed>)               = ?
+9694  <... exit resumed>)               = ?
+9695  +++ exited with 0 +++
+9694  +++ exited with 0 +++
+9693  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9693  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9693  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9693  +++ exited with 0 +++
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9696, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9696  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9696  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9696  exit(0)                           = ?
+9696  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} => {parent_tid=[9697]}, 88) = 9697
+9697  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9697  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9697  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9697  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9697  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9698]}, 88) = 9698
+9698  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9698  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9698  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9698  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9698  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9698  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9699]}, 88) = 9699
+9699  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9699  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9699  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} <unfinished ...>
+9699  <... set_robust_list resumed>)    = 0
+9699  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  <... clone3 resumed> => {parent_tid=[9700]}, 88) = 9700
+9700  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9699  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9700  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9700  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9697, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9700  <... set_robust_list resumed>)    = 0
+9700  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9698  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9698  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9697  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9698  <... madvise resumed>)            = 0
+9697  <... rt_sigprocmask resumed>NULL, 8) = 0
+9698  exit(0 <unfinished ...>
+9697  madvise(0x750dc1716000, 8368128, MADV_DONTNEED <unfinished ...>
+9698  <... exit resumed>)               = ?
+9697  <... madvise resumed>)            = 0
+9698  +++ exited with 0 +++
+9697  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9697  +++ exited with 0 +++
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9699, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9699  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9700  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9699  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED <unfinished ...>
+9700  <... rt_sigprocmask resumed>NULL, 8) = 0
+9699  <... madvise resumed>)            = 0
+9700  madvise(0x750dc2718000, 8368128, MADV_DONTNEED <unfinished ...>
+9699  exit(0)                           = ?
+9700  <... madvise resumed>)            = 0
+9699  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9700  exit(0 <unfinished ...>
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9700, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9700  <... exit resumed>)               = ?
+9682  <... futex resumed>)              = 0
+9700  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9701]}, 88) = 9701
+9701  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9701  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9701  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9701  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9701  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9702]}, 88) = 9702
+9702  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9702  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9702  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9702  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9702  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9703]}, 88) = 9703
+9703  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9703  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9703  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9703  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9703  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9703  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9704]}, 88) = 9704
+9704  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9704  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9701, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9704  set_robust_list(0x750dc1f169a0, 24) = 0
+9704  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9704  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9704  madvise(0x750dc1716000, 8368128, MADV_DONTNEED <unfinished ...>
+9701  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9704  <... madvise resumed>)            = 0
+9701  <... rt_sigprocmask resumed>NULL, 8) = 0
+9704  exit(0 <unfinished ...>
+9701  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9704  <... exit resumed>)               = ?
+9701  exit(0 <unfinished ...>
+9704  +++ exited with 0 +++
+9701  <... exit resumed>)               = ?
+9682  <... futex resumed>)              = 0
+9701  +++ exited with 0 +++
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9702, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9703  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9702  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9703  <... rt_sigprocmask resumed>NULL, 8) = 0
+9702  <... rt_sigprocmask resumed>NULL, 8) = 0
+9703  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9702  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED <unfinished ...>
+9703  <... madvise resumed>)            = 0
+9702  <... madvise resumed>)            = 0
+9703  exit(0 <unfinished ...>
+9702  exit(0 <unfinished ...>
+9703  <... exit resumed>)               = ?
+9703  +++ exited with 0 +++
+9702  <... exit resumed>)               = ?
+9682  <... futex resumed>)              = 0
+9702  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} => {parent_tid=[9705]}, 88) = 9705
+9705  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9705  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9705  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9705  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9705  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9705  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9706]}, 88) = 9706
+9706  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9706  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9706  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9706  <... set_robust_list resumed>)    = 0
+9706  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  <... clone3 resumed> => {parent_tid=[9707]}, 88) = 9707
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9707  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9706  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9707  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9707  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9707  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} <unfinished ...>
+9707  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9708]}, 88) = 9708
+9708  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9708  <... rseq resumed>)               = 0
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9705, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9708  set_robust_list(0x750dc2f189a0, 24) = 0
+9708  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9706  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9706  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED) = 0
+9706  exit(0)                           = ?
+9705  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9706  +++ exited with 0 +++
+9705  <... rt_sigprocmask resumed>NULL, 8) = 0
+9705  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9708  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9705  exit(0 <unfinished ...>
+9708  <... rt_sigprocmask resumed>NULL, 8) = 0
+9708  madvise(0x750dc2718000, 8368128, MADV_DONTNEED <unfinished ...>
+9705  <... exit resumed>)               = ?
+9708  <... madvise resumed>)            = 0
+9705  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9707, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9708  exit(0)                           = ?
+9708  +++ exited with 0 +++
+9707  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9707  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9707  exit(0)                           = ?
+9707  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9709]}, 88) = 9709
+9709  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9709  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9709  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9709  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9709  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9709  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9710]}, 88) = 9710
+9710  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9710  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9710  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9710  <... set_robust_list resumed>)    = 0
+9710  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9710  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9711]}, 88) = 9711
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9711  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9711  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9711  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9711  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9711  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9712]}, 88) = 9712
+9712  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9712  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9712  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9709, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9712  <... set_robust_list resumed>)    = 0
+9712  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9711  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9709  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9711  <... rt_sigprocmask resumed>NULL, 8) = 0
+9709  <... rt_sigprocmask resumed>NULL, 8) = 0
+9711  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9709  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9711  <... madvise resumed>)            = 0
+9709  exit(0 <unfinished ...>
+9711  exit(0 <unfinished ...>
+9709  <... exit resumed>)               = ?
+9709  +++ exited with 0 +++
+9710  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9682  <... futex resumed>)              = 0
+9711  <... exit resumed>)               = ?
+9710  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9710, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9711  +++ exited with 0 +++
+9710  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9710  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9710  +++ exited with 0 +++
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9712, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9712  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9712  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9712  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9712  +++ exited with 0 +++
+9682  write(1, "  \320\277\320\276\321\202\320\276\320\272\320\276\320\262: 4, \320\262\321\200\320\265\320\274\321\217:"..., 107) = 107
+9682  write(1, "\320\235\320\260\321\200\320\260\321\211\320\270\320\262\320\260\320\275\320\270\320\265, \320\277\320\276\321\201\320\273"..., 68) = 68
+9682  write(1, "  \320\277\320\276\321\202\320\276\320\272\320\276\320\262: 1, \320\262\321\200\320\265\320\274\321\217:"..., 108) = 108
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} => {parent_tid=[9713]}, 88) = 9713
+9713  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9713  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9713  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9713  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9713  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  <... clone3 resumed> => {parent_tid=[9714]}, 88) = 9714
+9714  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9714  <... rseq resumed>)               = 0
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9713, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9714  set_robust_list(0x750dc27179a0, 24) = 0
+9714  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9713  <... rt_sigprocmask resumed>NULL, 8) = 0
+9714  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9714  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED) = 0
+9714  exit(0)                           = ?
+9714  +++ exited with 0 +++
+9713  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9713  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9713  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9713  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} => {parent_tid=[9715]}, 88) = 9715
+9715  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9715  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9715  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9715  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9715  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9715  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9716]}, 88) = 9716
+9716  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9716  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9716  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9715, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9716  <... set_robust_list resumed>)    = 0
+9716  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9716  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9716  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9716  exit(0)                           = ?
+9716  +++ exited with 0 +++
+9715  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9715  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED) = 0
+9715  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9715  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} => {parent_tid=[9717]}, 88) = 9717
+9717  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9717  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9717  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9717  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9717  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9717  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9718]}, 88) = 9718
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9718  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9718  <... rseq resumed>)               = 0
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9717, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9718  set_robust_list(0x750dc27179a0, 24) = 0
+9718  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9717  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9717  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9717  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9717  +++ exited with 0 +++
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9718, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9718  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9718  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED) = 0
+9718  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9718  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} => {parent_tid=[9719]}, 88) = 9719
+9719  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9719  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9719  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9719  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9719  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9720]}, 88) = 9720
+9720  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9720  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9719, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9720  set_robust_list(0x750dc1f169a0, 24) = 0
+9720  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9719  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9719  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED) = 0
+9719  exit(0)                           = ?
+9719  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9720, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9720  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9720  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9720  exit(0)                           = ?
+9720  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} => {parent_tid=[9721]}, 88) = 9721
+9721  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9721  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9721  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9721  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9721  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9722]}, 88) = 9722
+9722  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9722  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9722  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9721, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9722  <... set_robust_list resumed>)    = 0
+9722  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9721  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9721  madvise(0x750dc1716000, 8368128, MADV_DONTNEED) = 0
+9721  exit(0 <unfinished ...>
+9722  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9721  <... exit resumed>)               = ?
+9682  <... futex resumed>)              = 0
+9722  <... rt_sigprocmask resumed>NULL, 8) = 0
+9721  +++ exited with 0 +++
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9722, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9722  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED) = 0
+9722  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9722  +++ exited with 0 +++
+9682  write(1, "  \320\277\320\276\321\202\320\276\320\272\320\276\320\262: 2, \320\262\321\200\320\265\320\274\321\217:"..., 107) = 107
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} => {parent_tid=[9723]}, 88) = 9723
+9723  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9723  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9723  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9723  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9723  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9724]}, 88) = 9724
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9724  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9724  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9724  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9724  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9724  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9725]}, 88) = 9725
+9725  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9725  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9725  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9725  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9725  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} <unfinished ...>
+9725  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9726]}, 88) = 9726
+9726  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9726  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9726  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9723, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9726  <... set_robust_list resumed>)    = 0
+9726  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9725  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9723  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9725  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED <unfinished ...>
+9723  <... rt_sigprocmask resumed>NULL, 8) = 0
+9725  <... madvise resumed>)            = 0
+9723  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9725  exit(0 <unfinished ...>
+9723  <... madvise resumed>)            = 0
+9725  <... exit resumed>)               = ?
+9725  +++ exited with 0 +++
+9723  exit(0)                           = ?
+9723  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9724  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9724, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9724  <... rt_sigprocmask resumed>NULL, 8) = 0
+9726  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9724  madvise(0x750dc1716000, 8368128, MADV_DONTNEED <unfinished ...>
+9726  <... rt_sigprocmask resumed>NULL, 8) = 0
+9724  <... madvise resumed>)            = 0
+9726  madvise(0x750dc2718000, 8368128, MADV_DONTNEED <unfinished ...>
+9724  exit(0 <unfinished ...>
+9726  <... madvise resumed>)            = 0
+9726  exit(0 <unfinished ...>
+9724  <... exit resumed>)               = ?
+9726  <... exit resumed>)               = ?
+9726  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9724  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9727]}, 88) = 9727
+9727  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9727  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9727  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9727  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9727  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9727  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9728]}, 88) = 9728
+9728  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9728  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9728  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9728  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9728  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9728  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9729]}, 88) = 9729
+9729  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9729  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9729  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9729  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9729  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9730]}, 88) = 9730
+9730  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053) = 0
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9730  set_robust_list(0x750dc27179a0, 24) = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9727, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9730  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9727  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9727  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9727  exit(0)                           = ?
+9728  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9682  <... futex resumed>)              = 0
+9727  +++ exited with 0 +++
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9728, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9728  <... rt_sigprocmask resumed>NULL, 8) = 0
+9728  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9728  exit(0 <unfinished ...>
+9729  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9728  <... exit resumed>)               = ?
+9729  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... futex resumed>)              = 0
+9729  madvise(0x750dc1716000, 8368128, MADV_DONTNEED <unfinished ...>
+9728  +++ exited with 0 +++
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9729, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9729  <... madvise resumed>)            = 0
+9729  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9729  +++ exited with 0 +++
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9730, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9730  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9730  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED) = 0
+9730  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9730  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} => {parent_tid=[9734]}, 88) = 9734
+9734  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9734  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9734  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9734  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9734  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9735]}, 88) = 9735
+9735  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9735  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9735  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9735  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9735  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9735  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9736]}, 88) = 9736
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9736  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9736  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9736  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} <unfinished ...>
+9736  <... set_robust_list resumed>)    = 0
+9736  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  <... clone3 resumed> => {parent_tid=[9737]}, 88) = 9737
+9737  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9736  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9737  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9737  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9734, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9737  <... set_robust_list resumed>)    = 0
+9737  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9736  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9734  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9736  <... rt_sigprocmask resumed>NULL, 8) = 0
+9736  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED <unfinished ...>
+9734  <... rt_sigprocmask resumed>NULL, 8) = 0
+9736  <... madvise resumed>)            = 0
+9734  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9736  exit(0)                           = ?
+9734  <... madvise resumed>)            = 0
+9736  +++ exited with 0 +++
+9734  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9734  +++ exited with 0 +++
+9735  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9735, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9735  <... rt_sigprocmask resumed>NULL, 8) = 0
+9735  madvise(0x750dc1716000, 8368128, MADV_DONTNEED <unfinished ...>
+9737  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9735  <... madvise resumed>)            = 0
+9735  exit(0 <unfinished ...>
+9737  madvise(0x750dc2718000, 8368128, MADV_DONTNEED <unfinished ...>
+9735  <... exit resumed>)               = ?
+9682  <... futex resumed>)              = 0
+9737  <... madvise resumed>)            = 0
+9735  +++ exited with 0 +++
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9737, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9737  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9737  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} => {parent_tid=[9738]}, 88) = 9738
+9738  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053) = 0
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9738  set_robust_list(0x750dc2f189a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9738  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9738  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9738  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9739]}, 88) = 9739
+9739  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9739  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9739  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9739  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9739  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9740]}, 88) = 9740
+9740  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9740  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9740  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9740  <... set_robust_list resumed>)    = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} <unfinished ...>
+9740  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9741]}, 88) = 9741
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9741  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9741  <... rseq resumed>)               = 0
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9738, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9741  set_robust_list(0x750dc27179a0, 24) = 0
+9741  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9738  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9739  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9738  <... rt_sigprocmask resumed>NULL, 8) = 0
+9739  <... rt_sigprocmask resumed>NULL, 8) = 0
+9739  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED <unfinished ...>
+9738  madvise(0x750dc2718000, 8368128, MADV_DONTNEED <unfinished ...>
+9739  <... madvise resumed>)            = 0
+9738  <... madvise resumed>)            = 0
+9739  exit(0)                           = ?
+9738  exit(0 <unfinished ...>
+9739  +++ exited with 0 +++
+9738  <... exit resumed>)               = ?
+9682  <... futex resumed>)              = 0
+9738  +++ exited with 0 +++
+9682  futex(0x750dc1f16990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9740, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9740  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9740  madvise(0x750dc1716000, 8368128, MADV_DONTNEED <unfinished ...>
+9741  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9740  <... madvise resumed>)            = 0
+9741  <... rt_sigprocmask resumed>NULL, 8) = 0
+9740  exit(0 <unfinished ...>
+9741  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9740  <... exit resumed>)               = ?
+9741  <... madvise resumed>)            = 0
+9682  <... futex resumed>)              = 0
+9740  +++ exited with 0 +++
+9741  exit(0 <unfinished ...>
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9741, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9741  <... exit resumed>)               = ?
+9682  <... futex resumed>)              = 0
+9741  +++ exited with 0 +++
+9682  rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2717990, parent_tid=0x750dc2717990, exit_signal=0, stack=0x750dc1f17000, stack_size=0x7fff80, tls=0x750dc27176c0} => {parent_tid=[9742]}, 88) = 9742
+9742  rseq(0x750dc2717fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9742  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9742  set_robust_list(0x750dc27179a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc1f16990, parent_tid=0x750dc1f16990, exit_signal=0, stack=0x750dc1716000, stack_size=0x7fff80, tls=0x750dc1f166c0} <unfinished ...>
+9742  <... set_robust_list resumed>)    = 0
+9742  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9743]}, 88) = 9743
+9743  rseq(0x750dc1f16fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9743  <... rseq resumed>)               = 0
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9743  set_robust_list(0x750dc1f169a0, 24 <unfinished ...>
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9743  <... set_robust_list resumed>)    = 0
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9743  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc3719990, parent_tid=0x750dc3719990, exit_signal=0, stack=0x750dc2f19000, stack_size=0x7fff80, tls=0x750dc37196c0} <unfinished ...>
+9743  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9744]}, 88) = 9744
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9744  rseq(0x750dc3719fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9744  <... rseq resumed>)               = 0
+9682  rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+9744  set_robust_list(0x750dc37199a0, 24 <unfinished ...>
+9682  <... rt_sigprocmask resumed>[], 8) = 0
+9744  <... set_robust_list resumed>)    = 0
+9744  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9682  clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x750dc2f18990, parent_tid=0x750dc2f18990, exit_signal=0, stack=0x750dc2718000, stack_size=0x7fff80, tls=0x750dc2f186c0} <unfinished ...>
+9744  <... rt_sigprocmask resumed>NULL, 8) = 0
+9682  <... clone3 resumed> => {parent_tid=[9745]}, 88) = 9745
+9682  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+9745  rseq(0x750dc2f18fe0, 0x20, 0, 0x53053053 <unfinished ...>
+9682  <... rt_sigprocmask resumed>NULL, 8) = 0
+9745  <... rseq resumed>)               = 0
+9682  futex(0x750dc2717990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9742, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9745  set_robust_list(0x750dc2f189a0, 24) = 0
+9745  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+9742  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9743  rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+9742  madvise(0x750dc1f17000, 8368128, MADV_DONTNEED <unfinished ...>
+9743  <... rt_sigprocmask resumed>NULL, 8) = 0
+9743  madvise(0x750dc1716000, 8368128, MADV_DONTNEED <unfinished ...>
+9742  <... madvise resumed>)            = 0
+9743  <... madvise resumed>)            = 0
+9742  exit(0 <unfinished ...>
+9743  exit(0 <unfinished ...>
+9742  <... exit resumed>)               = ?
+9743  <... exit resumed>)               = ?
+9742  +++ exited with 0 +++
+9682  <... futex resumed>)              = 0
+9682  futex(0x750dc3719990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9744, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9743  +++ exited with 0 +++
+9744  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9744  madvise(0x750dc2f19000, 8368128, MADV_DONTNEED) = 0
+9744  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9744  +++ exited with 0 +++
+9682  futex(0x750dc2f18990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 9745, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+9745  rt_sigprocmask(SIG_BLOCK, ~[RT_1], NULL, 8) = 0
+9745  madvise(0x750dc2718000, 8368128, MADV_DONTNEED) = 0
+9745  exit(0)                           = ?
+9682  <... futex resumed>)              = 0
+9745  +++ exited with 0 +++
+9682  write(1, "  \320\277\320\276\321\202\320\276\320\272\320\276\320\262: 4, \320\262\321\200\320\265\320\274\321\217:"..., 107) = 107
+9682  munmap(0x750dc465e000, 8003584)   = 0
+9682  munmap(0x750dc3ebc000, 8003584)   = 0
+9682  munmap(0x750dc371a000, 8003584)   = 0
+9682  exit_group(0)                     = ?
+9682  +++ exited with 0 +++
